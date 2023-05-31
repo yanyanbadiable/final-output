@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>JS | Overview</title>
+</head>
+<body>
+    <div class="container">
+    <header><h1>Basic JavaScript Overview</h1></header>
+    <div class="main-content">
+    <nav class="sidebar">
+        <h2>JavaScript Topics</h2>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="intro.html">Introduction</a></li>
+            <li><a href="variables.html">Declaring Variables</a></li>
+            <li><a href="pop-up.html">Pop-up Messages</a></li>
+            <li><a href="arit.html" class="active">Arithmetic Operators</a></li>
+            <li><a href="assign.html">Assignment Operators</a></li>
+            <li><a href="condition.html">Conditional Statements</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="array.html">Arrays</a></li> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+    </nav>
+    <div class="arit-main-content">
+    <div class="arit-content">
+        <h1>JavaScript Arithmetic Operators</h1>
+        <br><br><br>
+        <h2>What is JavaScript Arithmetic Operators?</h2>
+        <br>
+        <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+        <br>
+         <div class="example">  
+            <pre>     
+    <b>Operator</b>       <b>Description</b><br>
+       <span>+</span>           Addition
+       <span>-</span>           Subtraction 
+       <span>*</span>           Multiplication     
+       <span>/</span>           Division 
+       <span>**</span>          Exponentation 
+       <span>%</span>           Modulos (Remainder) 
+       <span>++</span>          Increment 
+       <span>--</span>          Decrement 
+            </pre>
+        </div>
+        <h1>JavaScript Arithmetic Operation</h1>
+        <br>
+        <h2>1. Addition</h2>
+        <br>
+        <p>The addition operator is used to add two or more numbers together. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 5;
+    let y = 2;
+    let z = x + y;
+            </pre>
+        </div>    
+        <button onclick="addResult()">Show result</button> 
+        <br>
+        <h2>2. Subtraction</h2>
+        <br>
+        <p>The subtraction operator is used to subtract two or more numbers together. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 5;
+    let y = 2;
+    let z = x - y;
+            </pre>
+        </div>    
+        <button onclick="subResult()">Show result</button> 
+        <br>
+        <h2>3. Multiplication</h2>
+        <br>
+        <p>The multiplication operator is used to multiply two or more numbers. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 5;
+    let y = 2;
+    let z = x * y;
+            </pre>
+        </div>    
+        <button onclick="mulResult()">Show result</button> 
+        <br>
+        <h2>4. Division</h2>
+        <br>
+        <p>The division operator is used to divide two or more numbers. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 5;
+    let y = 2;
+    let z = x / y;
+            </pre>
+        </div>    
+        <button onclick="divResult()">Show result</button> 
+        <br>
+        <h2>5. Exponentation</h2>
+        <br>
+        <p>The exponentation operator raises the first operand to the power of the second operand. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 5;
+    let y = 2;
+    let z = x ** y;
+            </pre>
+        </div>    
+        <button onclick="expResult()">Show result</button> 
+        <br>
+        <h2>6. Modulos (Remainder)</h2>
+        <br>
+        <p>The modulo operators returns the division remainder. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 5;
+    let y = 2;
+    let z = x % y;
+            </pre>
+        </div>    
+        <button onclick="remResult()">Show result</button> 
+        <br>
+        <h2>7. Increment</h2>
+        <br>
+        <p>The increment operator increments numbers. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 10;
+    x++;
+    let z = x;
+            </pre>
+        </div>    
+        <button onclick="incResult()">Show result</button> 
+        <br>
+        <h2>8. Decrement</h2>
+        <br>
+        <p>The decrement operator decrements numbers. </p>
+        <br>
+        <h3>For Example: </h3>
+        <br>  
+        <div class="example">  
+            <pre>     
+    let x = 10;
+    x--;
+    let z = x;
+            </pre>
+        </div>    
+        <button onclick="decResult()">Show result</button> 
+        <br>
+        
+    </div>
+    <footer> Developed By: Badiable, Brand Ian B.</footer>
+    </div>
+</div>
+</div>    
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg2.jpg'), linear-gradient(rgb(1, 129, 189), rgb(0, 26, 32));
+    background-blend-mode: multiply;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header h1{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+header{
+    position: fixed ;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    background: #0B2447;
+}
+.main-content{
+    display: flex;
+}
+.sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    z-index: 98;
+    width: 250px;
+    height: 100%;
+    border: 1px solid #0B2447;
+    box-shadow: 0 0 10px  black ;
+    background:#0f649b;  
+    overflow-y: scroll;       
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+
+.sidebar h2{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #0B2447;
+    border-top: 1px solid #0B2447;
+    letter-spacing: 4px;
+    background: #19376D;
+}
+
+.sidebar ul a{
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #0B2447;
+    cursor: pointer;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background:#19376D;
+
+}
+.active{
+    background:#0B2447;
+}
+.arit-main-content{
+    width: 100%;
+    margin-left: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.arit-content{
+    text-align: justify;
+    margin: 100px 2%;
+}
+.arit-content h1{
+    font-size: 40px;
+    color: rgb(250, 196, 103);
+    
+}
+.arit-content h2{
+    color: #FFD3B0;
+    letter-spacing: 1px;
+    
+}
+.arit-content p{
+    font-size: 18px;
+    color: #FFF9DE;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-right: 40px;
+}
+p span{
+    color: yellow;
+    font-size: 20px;
+}
+h2 span{
+    color: yellow;
+}
+.arit-content h3{
+    letter-spacing: 1px;
+    color: #FFF9DE;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.example pre{
+    color: black;
+    font-size: 15px;
+    margin-right: 100px ;
+}
+.example span{
+    font-size: 15px;
+    font-weight: bolder; 
+}
+
+.example{
+    padding: 5px;
+    width: 400px;
+    margin: 0 150px;
+    margin-bottom: 15px;
+    background-color: white;   
+    border: 3px solid #30A2FF;
+    border-radius: 15px;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #9BABB8, #30A2FF);
+    border-radius: 10px;
+    background-size: 100% auto;
+    font-size: 17px;
+    margin: 0px 280px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+   
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+footer{
+    width: auto;
+    color: white;
+    background-color: #0B2447; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+</style>
+</html>

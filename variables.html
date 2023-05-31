@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>JS | Overview</title>
+</head>
+<body>
+    <div class="container">
+    <header><h1>Basic JavaScript Overview</h1></header>
+    <div class="main-content">
+    <nav class="sidebar">
+        <h2>JavaScript Topics</h2>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="intro.html">Introduction</a></li>
+            <li><a href="variables.html" class="active">Declaring Variables</a></li>
+            <li><a href="pop-up.html">Pop-up Messages</a></li>
+            <li><a href="arit.html">Arithmetic Operators</a></li>
+            <li><a href="assign.html">Assignment Operators</a></li>
+            <li><a href="condition.html">Conditional Statements</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="array.html">Arrays</a></li> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+    </nav>
+    <div class="var-main-content">
+    <div class="var-content">
+        <h1>JavaScript Declaring Variables</h1>
+        <br><br><br>
+        <h2>4 ways to Declare a JavaScript variables:</h2>
+        <br>
+        <p>1. Using <span>var</span> <br>
+           2. Using <span>let</span> <br>
+           3. Using <span>const</span><br>
+           4. Using nothing <br>
+        </p>
+        <br>
+        <h2>What are Variables?</h2>
+        <br>
+        <p>In JavaScript, a variable is a container that can hold a value. It is declared using the <span>var, let, or const </span>  keyword, followed by the variable name. </p>
+        <br>
+        <h3>For Example: </h3> 
+        <div class="example">  
+            <pre>     
+    Using var:           Using let: 
+      var x = 5;           let x = 5;
+      var y = 6;           let y = 6;
+      var z = x + y;       let z = x + y;
+           
+    Using const:         Using variable 
+      const x = 5;       without declaring: 
+      const y = 6;          x = 5;
+      const z = x + y;      y = 6;
+                            z = x + y;   
+            </pre>
+        </div>
+        <button id = "result" onclick="result()">Show result</button> 
+        <br>
+        <h2>When to use Javascript <span>var</span> ?</h2>
+        <br>
+        <p>Variables declared with <span>var</span> have function-level scope, meaning that they are accessible within the function they are declared in, or globally if declared outside a function. var variables can also be re-assigned and hoisted to the top of their scope, which can lead to unexpected behavior if not used carefully.
+        </p>
+        <br>
+        <h2>When to use Javascript <span>let</span> ?</h2>
+        <br>
+        <p>Variables declared with <span>let</span> have block-level scope, meaning that they are only accessible within the block they are declared in (for example, within a loop or an if statement). let variables can be re-assigned but cannot be re-declared within the same block.            
+        </p>
+        <br>
+        <h2>When to use Javascript <span>const</span> ?</h2>
+        <br>
+        <p>Variables declared with <span>const</span> are also block-scoped and cannot be re-assigned once they are initialized. This means that the value of a const variable cannot be changed after it is set, although the properties of an object or elements of an array assigned to a const variable can still be modified.           
+        </p>
+    </div>
+
+    <footer> Developed By: Badiable, Brand Ian B.</footer>
+</div>
+</div>
+</div>    
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg2.jpg'), linear-gradient(rgb(1, 129, 189), rgb(0, 26, 32));
+    background-blend-mode: multiply;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header h1{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+header{
+    position: fixed ;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    background: #0B2447;
+}
+.main-content{
+    display: flex;
+}
+.sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    z-index: 98;
+    width: 250px;
+    height: 100%;
+    border: 1px solid #0B2447;
+    box-shadow: 0 0 10px  black ;
+    background:#0f649b;  
+    overflow-y: scroll;     
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar h2{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #0B2447;
+    border-top: 1px solid #0B2447;
+    letter-spacing: 4px;
+    background: #19376D;
+}
+
+.sidebar ul a{
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #0B2447;
+    cursor: pointer;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background:#19376D;
+
+}
+.active{
+    background:#0B2447;
+}
+.var-main-content{
+    margin-left: 250px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.var-content{
+    text-align: justify;
+    margin: 100px 2%;
+}
+.var-content h1{
+    font-size: 40px;
+    color: rgb(250, 196, 103);;
+    
+}
+.var-content h2{
+    color: #FFD3B0;
+    letter-spacing: 1px;
+    
+}
+.var-content p{
+    font-size: 18px;
+    color: #FFF9DE;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-right: 40px;
+}
+p span{
+    color: yellow;
+    font-size: 20px;
+}
+h2 span{
+    color: yellow;
+}
+.var-content h3{
+    letter-spacing: 1px;
+    color: #FFF9DE;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.example pre{
+    color: black;
+    font-size: 15px;
+    margin-right: 100px auto;
+}
+.example{
+    padding: 5px;
+    width: 400px;
+    margin: 0 150px;
+    margin-bottom: 15px;
+    background-color: white;   
+    border: 3px solid #30A2FF;
+    border-radius: 15px;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #9BABB8, #30A2FF);
+    border-radius: 10px;
+    background-size: 100% auto;
+    font-size: 17px;
+    margin: 0px 300px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+   
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+footer{
+    color: white;
+    background-color: #0B2447; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+</style>
+</html>

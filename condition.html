@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>JS | Overview</title>
+</head>
+<body>
+    <div class="container">
+    <header><h1>Basic JavaScript Overview</h1></header>
+    <div class="main-content">
+    <nav class="sidebar">
+        <h2>JavaScript Topics</h2>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="intro.html">Introduction</a></li>
+            <li><a href="variables.html">Declaring Variables</a></li>
+            <li><a href="pop-up.html">Pop-up Messages</a></li>
+            <li><a href="arit.html">Arithmetic Operators</a></li>
+            <li><a href="assign.html">Assignment Operators</a></li>
+            <li><a href="condition.html" class="active">Conditional Statements</a></li>
+            <li><a href="loop.html">Loops</a></li> 
+            <li><a href="array.html">Arrays</a></li>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+    </nav>
+    <div class="con-main-content">
+    <div class="con-content">
+        <h1>JavaScript Conditional Statement</h1>
+        <br>
+        <p>In JavaScript, you can use conditional statements to execute certain code blocks based on whether a specific condition is true or false. The most common types of conditional statements in JavaScript are <span>if, else if, and else.</span>
+        </p>
+        <br><br>
+        <h2>IF Statement</h2>
+        <br>
+        <p>The <span>if statement</span> is used to check whether a condition is true or false. If the condition is true, the code inside the curly braces will be executed. If the condition is false, the code will be skipped. </p>
+        <br>
+        <h3>Syntax: </h3> 
+        <div class="syntax">  
+            <pre>     
+    if (condition) {
+    //  block of code to be executed if the condition is true
+    }
+            </pre>
+        </div>
+        <br>
+        <h3>Example: </h3> 
+        <div class="example">  
+            <pre>     
+    if (hour < 18) {
+    greeting = "Good day";
+    }
+            </pre>
+        </div>
+        <button onclick="ifResult()">Show result</button> 
+        <br>
+        <h2>Else if Statement</h2>
+        <br>
+        <p>The <span>else if statement</span> allows you to check an additional condition if the first condition is false. You can use as many else if statements as you need to check multiple conditions. </p>
+        <br>
+        <h3>Syntax: </h3> 
+        <div class="syntax1">  
+            <pre>     
+    if (condition1) {
+    //  block of code to be executed if condition1 is true
+    } else if (condition2) {
+    //  block of code to be executed if the condition1 is false and condition2 is true     
+    } else {
+    //  block of code to be executed if the condition1 is false and condition2 is false      
+    }
+            </pre>
+        </div>
+        <br>
+        <h3>Example: </h3> 
+        <div class="example">  
+            <pre>     
+    if (time < 10) {
+    greeting = "Good morning";
+    } else if (time < 20) {
+    greeting = "Good day";
+    } else {
+     greeting = "Good evening";
+    }
+            </pre>
+        </div>
+        <button onclick="eifResult()">Show result</button> 
+        <br>
+    <h2>Else Statement</h2>
+        <br>
+        <p>The <span>else statement</span>is used to specify a code block that should be executed if none of the previous conditions are true. <br><br>
+            Use the <span>else statement</span> to specify a block of code to be executed if the condition is false.</p>
+        <br>
+        <h3>Syntax: </h3> 
+        <div class="syntax">  
+        <pre>
+
+    if (condition) {
+    //  block of code to be executed if the condition is true
+    } else {
+    //  block of code to be executed if the condition is false
+    }
+        </pre>
+        </div>
+        <br>
+        <h3>Example: </h3> 
+        <div class="example">  
+            <pre>     
+    if (hour < 18) {
+    greeting = "Good day";
+    } else {
+    greeting = "Good evening";
+    }
+            </pre>
+        </div>
+        <button onclick="ieResult()">Show result</button> 
+        <br>
+        
+    </div>
+
+
+    <footer> Developed By: Badiable, Brand Ian B.</footer>
+</div>
+</div>
+</div>   
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg2.jpg'), linear-gradient(rgb(1, 129, 189), rgb(0, 26, 32));
+    background-blend-mode: multiply;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header h1{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+header{
+    position: fixed ;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    background: #0B2447;
+}
+.main-content{
+    display: flex;
+}
+.sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    z-index: 98;
+    width: 250px;
+    height: 100%;
+    border: 1px solid #0B2447;
+    box-shadow: 0 0 10px  black ;
+    background:#0f649b;  
+    overflow-y: scroll;       
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar h2{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #0B2447;
+    border-top: 1px solid #0B2447;
+    letter-spacing: 4px;
+    background: #19376D;
+}
+
+.sidebar ul a{
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #0B2447;
+    cursor: pointer;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background:#19376D;
+
+}
+.active{
+    background:#0B2447;
+}
+.con-main-content{
+    margin-left: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.con-content{
+    text-align: justify;
+    margin: 100px 2%;
+}
+.con-content h1{
+    font-size: 40px;
+    color: rgb(250, 196, 103);
+    
+}
+.con-content h2{
+    color: #FFD3B0;
+    letter-spacing: 1px;
+    
+}
+.con-content p{
+    font-size: 18px;
+    color: #FFF9DE;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-right: 40px;
+}
+p span{
+    color: yellow;
+    font-size: 20px;
+}
+h2 span{
+    color: yellow;
+}
+.con-content h3{
+    letter-spacing: 1px;
+    color: #FFF9DE;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.syntax pre{
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+} 
+.syntax{
+    width: 630px;
+    margin: 0 110px;
+    margin-bottom: 15px;
+    background-color: white;   
+    border: 3px solid #30A2FF;
+    border-radius: 15px;
+}
+.syntax1 pre{
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
+.syntax1{
+    overflow-x: scroll;
+    width: 630px;
+    margin: 0 110px;
+    margin-bottom: 15px;
+    background-color: white;   
+    border: 3px solid #30A2FF;
+    border-radius: 15px;
+}
+
+.example pre{
+    color: black;
+    font-size: 15px;
+    margin-right: 100px ;
+}
+.example{
+    padding: 5px;
+    width: 550px;
+    margin: 0 110px;
+    margin-bottom: 15px;
+    background-color: white;   
+    border: 3px solid #30A2FF;
+    border-radius: 15px;
+}
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #9BABB8, #30A2FF);
+    border-radius: 10px;
+    background-size: 100% auto;
+    font-size: 17px;
+    margin: 0px 300px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+   
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+
+footer{
+    color: white;
+    background-color: #0B2447; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+</style>
+</html>

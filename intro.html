@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Overview</title>
+</head>
+<body>
+<div class="container">
+    <header><h1>Basic JavaScript Overview</h1></header>
+    <div class="main-content">
+            <nav class="sidebar">
+                <h2>JavaScript Topics</h2>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="intro.html" class="active">Introduction</a></li>
+                    <li><a href="variables.html">Declaring Variables</a></li>
+                    <li><a href="pop-up.html">Pop-up Messages</a></li>
+                    <li><a href="arit.html">Arithmetic Operators</a></li>
+                    <li><a href="assign.html">Assignment Operators</a></li>
+                    <li><a href="condition.html">Conditional Statements</a></li>
+                    <li><a href="loop.html">Loops</a></li> 
+                    <li><a href="array.html">Arrays</a></li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </ul>
+            </nav>
+        <div class="intro-main-content">
+            <div class="intro-content">
+                <h1>JavaScript Introduction</h1>
+                <br><br><br>
+                <h2>What is JavaScript?</h2>
+                <br>
+                <p>JavaScript is a scripting language for creating dynamic web page content. It creates elements for improving site visitor's interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors.</p>
+                <br><br><br>
+                <h2>What is JavaScript used for?</h2>
+                <br>
+                <p>JavaScript is a versatile programming language used to add interactivity and dynamic behavior to websites and web applications. It is primarily used in web development to create client-side functionality that runs in a user's web browser.</p>
+                <br><br><br>
+                <h2>How Does the JavaScript Code Work on Your Web Page?</h2>
+                <br>
+                <p>JavaScript is a scripting language used to add interactivity to web pages. When you include JavaScript code in a web page, the browser interprets and executes the code as it renders the page.</p>
+                <br><br><br>
+                <h2>How Does JavaScript Differ from Other Programming Languages?</h2>
+                <br>
+                <p><span> JavaScript differs from other programming languages in several ways:</span>
+                <br><br>
+                1. It is a high-level scripting language: JavaScript is a high-level language that is designed to be easy to read and write. It is a scripting language, which means that it is interpreted at runtime rather than being compiled into machine code.
+                <br><br><br>        
+                2. It is primarily used for web development: JavaScript was originally developed for use in web browsers, and it is still primarily used for web development. It is used to create interactive web pages, web applications, and mobile applications.
+                <br><br><br>
+                3. It is a dynamically typed language: JavaScript is a dynamically typed language, which means that the type of a variable is determined at runtime. This is in contrast to statically typed languages like Java or C++, where the type of a variable is determined at compile time.
+                <br><br><br>
+                4. It has a functional programming style: JavaScript has built-in support for functional programming constructs like higher-order functions and closures. This allows developers to write code that is more concise and easier to reason about.
+                <br><br><br>
+                5. It has a large and active community: JavaScript has a large and active community of developers who contribute to a variety of open-source projects and libraries. This makes it easy to find solutions to common problems and to learn from other developers.
+                </p>
+            </div>
+            <footer> Developed By: Badiable, Brand Ian B.</footer>
+        </div>
+    </div>
+</div>    
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg2.jpg'), linear-gradient(rgb(1, 129, 189), rgb(0, 26, 32));
+    background-blend-mode: multiply;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header h1{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+header{
+    position: fixed ;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    background: #0B2447;
+}
+.main-content{
+    display: flex;
+}
+.sidebar{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    z-index: 98;
+    width: 250px;
+    height: 100%;
+    border: 1px solid #0B2447;
+    box-shadow: 0 0 10px  black ;
+    background:#0f649b;  
+    overflow-y: scroll;     
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.sidebar h2{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #0B2447;
+    border-top: 1px solid #0B2447;
+    letter-spacing: 4px;
+    background: #19376D;
+}
+
+.sidebar ul a{
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #0B2447;
+    cursor: pointer;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background:#19376D;
+
+}
+.active{
+    background:#0B2447;
+}
+.intro-main-content{
+    margin-left: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.intro-content{
+    text-align: justify;
+    margin: 100px 2%;
+}
+.intro-content h1{
+    font-size: 45px;
+    color: rgb(250, 196, 103);
+    
+}
+.intro-content h2{
+    font-size: 30px;
+    color: rgb(245, 212, 153);
+    letter-spacing: 1px;
+    
+}
+.intro-content p{
+    color: #FFF9DE;
+    font-size: 23px;
+    margin-left: 5%;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-right: 40px;
+}
+p span{
+    color: rgb(245, 212, 153);
+    font-size: 30px;
+    letter-spacing: 0;
+}
+
+footer{
+    color: white;
+    background-color: #0B2447; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+</style>
+</html>
